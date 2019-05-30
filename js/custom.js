@@ -8,6 +8,57 @@
         $('.page-loader').delay(350).fadeOut('slow');
     });
 
+    // Get the H1 heading
+    var number = document.querySelector('.number');
+
+    // Get it's position in the viewport
+    var bounding = number.getBoundingClientRect();
+
+    // Log the results
+    console.log(bounding);
+    // {
+    // 	height: 118,
+    // 	width: 591.359375,
+    // 	top: 137,
+    // 	bottom: 255,
+    // 	left: 40.3125,
+    // 	right: 631.671875
+    // }
+    
+    // Check if numbers are in viewport
+    // if (
+    //     bounding.top >= 0 &&
+    //     bounding.left >= 0 &&
+    //     bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+    //     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    // ) {
+    //     console.log('In viewport!');
+    //     $(this).prop('Counter', 0).animate({
+    //         Counter: $(this).text()
+    //         }, {
+    //         duration: 4000,
+    //         easing: 'swing',
+    //         step: function (now) {
+    //             $(this).text(Math.ceil(now));
+    //         }
+    //     });
+    // } else {
+    //     console.log('Not in the viewport... whomp whomp');
+    // }
+
+    // Incrementing Numbers
+        // $('.number').each(function () {
+        //     $(this).prop('Counter', 0).animate({
+        //         Counter: $(this).text()
+        //     }, {
+        //             duration: 4000,
+        //             easing: 'swing',
+        //             step: function (now) {
+        //                 $(this).text(Math.ceil(now));
+        //             }
+        //         });
+        // });
+
 
     /*navigation*/
     $.extend($.easing, {
@@ -274,10 +325,10 @@
 			complete: settings.complete
 		});
 	};
-    $('#number1').jQuerySimpleCounter({end: 7,duration: 2000});
-    $('#number2').jQuerySimpleCounter({end: 740,duration: 3000});
-    $('#number3').jQuerySimpleCounter({end: 15,duration: 2200});
-    $('#number4').jQuerySimpleCounter({end: 600,duration: 2500});
+    // $('#number1').jQuerySimpleCounter({end: 7,duration: 2000});
+    // $('#number2').jQuerySimpleCounter({end: 740,duration: 3000});
+    // $('#number3').jQuerySimpleCounter({end: 15,duration: 2200});
+    // $('#number4').jQuerySimpleCounter({end: 600,duration: 2500});
 
   	/* AUTHOR LINK */
      $('.about-me-img').hover(function(){

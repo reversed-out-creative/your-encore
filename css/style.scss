@@ -830,7 +830,7 @@ button[type="submit"]:focus {
 }
 
 .why_box>div>div:hover {
-	transform: scale(1.08);
+	// transform: scale(1.08);
 	background-color: #28b870;
 	box-shadow: -2px -2px 20px 0 rgba(0, 0, 0, 0.15);
 	transition: 0.4s;
@@ -1229,7 +1229,7 @@ button[type="submit"]:focus {
 }
 
 .leader_box .leader_title h3 a {
-	color: #00a4a0;
+	color: #333333;
 	display: block;
 }
 

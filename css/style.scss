@@ -944,9 +944,9 @@ button[type="submit"]:focus {
 }
 
 .challenges li a img {
-	-webkit-transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	transition: all .8s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .nav-tabs .nav-item.show .nav-link:hover,
@@ -960,7 +960,8 @@ button[type="submit"]:focus {
 	// -o-transform: scaleX(-1);
 	// -webkit-transform: scaleX(-1);
 	// transform: scaleX(-1);
-	transform: rotateY(360deg);
+	// transform: rotateY(360deg);
+	opacity: 0.6;
 	// filter: FlipH;
 	// -ms-filter: "FlipH";
 }
@@ -1212,7 +1213,7 @@ button[type="submit"]:focus {
 
 .leader_box:hover .fit_img img {
 	transform: scale(1.05);
-	// opacity: 0.5;
+	// opacity: 0.5;gt
 }
 
 .leader_box .leader_title {
